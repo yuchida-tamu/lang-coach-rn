@@ -15,7 +15,7 @@
     "ios": {
       "supportsTablet": true,
       "minVersion": "15.1",
-      "bundleIdentifier": "com.yuchida.lang-coach",
+      "bundleIdentifier": "com.langcoach.app",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
