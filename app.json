@@ -14,13 +14,15 @@
     },
     "ios": {
       "supportsTablet": true,
-      "minVersion": "15.1"
+      "minVersion": "15.1",
+      "bundleIdentifier": "com.yuchida.lang-coach"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yuchida.lang-coach"
     },
     "web": {
       "favicon": "./assets/favicon.png"
