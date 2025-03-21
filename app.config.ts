@@ -17,6 +17,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ios: {
     supportsTablet: true,
     bundleIdentifier: 'com.langcoach.app',
+    infoPlist: {
+      ITSAppUsesNonExemptEncryption: false,
+    },
   },
   android: {
     adaptiveIcon: {
@@ -29,10 +32,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     favicon: './assets/favicon.png',
   },
   extra: {
-    apiUrl: process.env.API_URL ?? 'https://api.example.com',
-    enableAnalytics: process.env.ENABLE_ANALYTICS === 'true',
     eas: {
-      projectId: process.env.EAS_PROJECT_ID ?? '',
+      projectId: '881edc74-2e50-474c-b11f-5438bd525725',
     },
   },
   plugins: [],

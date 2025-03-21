@@ -14,16 +14,26 @@
     },
     "ios": {
       "supportsTablet": true,
-      "minVersion": "15.1"
+      "minVersion": "15.1",
+      "bundleIdentifier": "com.langcoach.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yuchida.lang-coach"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "881edc74-2e50-474c-b11f-5438bd525725"
+      }
     }
   }
 }
