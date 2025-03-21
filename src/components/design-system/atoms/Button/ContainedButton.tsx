@@ -1,16 +1,27 @@
 import React from 'react';
 import { Pressable, StyleProp, Text, ViewStyle } from 'react-native';
 import { getButtonStyles } from './ContainedButton.styles';
-import { ContainedButtonProps } from './ContainedButton.types';
+
+type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'inverse';
+type ButtonSize = 'small' | 'medium' | 'large';
+
+type ContainedButtonProps = {
+  label: string;
+  variant?: ButtonVariant;
+  size?: ButtonSize;
+  disabled?: boolean;
+  style?: StyleProp<ViewStyle>;
+
+  onPress: () => void;
+};
 
 export const ContainedButton: React.FC<ContainedButtonProps> = ({
   label,
   variant = 'primary',
   size = 'medium',
   disabled = false,
-  onPress,
   style,
-  ...props
+  onPress,
 }) => {
   const styles = getButtonStyles(variant, size, disabled);
 
@@ -27,7 +38,6 @@ export const ContainedButton: React.FC<ContainedButtonProps> = ({
       disabled={disabled}
       accessibilityRole="button"
       accessibilityState={{ disabled }}
-      {...props}
     >
       <Text style={styles.text}>{label}</Text>
     </Pressable>
