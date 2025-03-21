@@ -16,8 +16,8 @@
       "supportsTablet": true,
       "minVersion": "15.1",
       "bundleIdentifier": "com.yuchida.lang-coach",
-      "config": {
-        "usesNonExemptEncryption": false
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
