@@ -15,7 +15,10 @@
     "ios": {
       "supportsTablet": true,
       "minVersion": "15.1",
-      "bundleIdentifier": "com.yuchida.lang-coach"
+      "bundleIdentifier": "com.yuchida.lang-coach",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
